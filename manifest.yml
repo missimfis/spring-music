@@ -3,7 +3,7 @@ applications:
 - name: spring-music
   memory: 512M
   instances: 1
-  random-route: true
+  host: spring-music-teamX
   path: build/libs/spring-music.war
   services:
   - music-mongodb
