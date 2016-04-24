@@ -139,18 +139,18 @@ tomcatRun {
 }
 
 cloudfoundry {
-    target = "https://api.run.pivotal.io"
-    space = "development"
+    target = "https://api.lyra-836.appcloud.swisscom.com"
+    space = "Team 9"
 
     file = file("${war.archivePath}")
-    uri = "spring-music-${randomWord}.cfapps.io"
+    uri = "spring-music-team9-${randomWord}.cfapps.io"
     memory = 512
     instances = 1
 
     services {
         "music-mongodb" {
-            label = "mongolab"
-            plan = "sandbox"
+            label = "mongodb"
+            plan = "small"
         }
     }
 }
