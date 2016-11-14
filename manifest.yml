@@ -3,7 +3,7 @@ applications:
 - name: spring-music
   memory: 512M
   instances: 1
-  host: spring-music-teamX
+  host: spring-music-fischmis
   path: build/libs/spring-music.war
   buildpack: java_buildpack
   
